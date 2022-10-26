@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "984182882466",
-    "project_id": "train-app-2dc6a",
-    "storage_bucket": "train-app-2dc6a.appspot.com"
+    "project_number": "1049301467739",
+    "project_id": "train-app-64999",
+    "storage_bucket": "train-app-64999.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:984182882466:android:3f34260408265a324a17fb",
+        "mobilesdk_app_id": "1:1049301467739:android:0e78bb006f799f1da4357e",
         "android_client_info": {
-          "package_name": "com.trainbooking"
+          "package_name": "com.trainbook"
         }
       },
       "oauth_client": [
         {
-          "client_id": "984182882466-5h58rf43j6lr61fk0b4lnb9pf3cdh4ft.apps.googleusercontent.com",
+          "client_id": "1049301467739-2kfk4fsra30jnj01rse1kam72asgihbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trainbook",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1049301467739-lrt18blqa3badae5ji7m1rtcm1ql46d7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAP2Q_dK_IRa5XFRaSitj89zW51_XbGQrU"
+          "current_key": "AIzaSyDtt2w76FbM8n5eSVNJyVcK_BX77x9CcEY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "984182882466-5h58rf43j6lr61fk0b4lnb9pf3cdh4ft.apps.googleusercontent.com",
+              "client_id": "1049301467739-lrt18blqa3badae5ji7m1rtcm1ql46d7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

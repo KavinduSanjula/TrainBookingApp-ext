@@ -1,14 +1,37 @@
 import { useNavigation } from "@react-navigation/native";
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import {View,SafeAreaView,Text,StyleSheet,ScrollView, ImageBackground,TextInput, TouchableOpacity,Image} from 'react-native'
-
-
+import { ToastAndroid } from "react-native";
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { initializeApp} from 'firebase/app';
 
 
 
 
 const RegisterPage= ()=>{
 
+    const handleRegister = ()=>{
+
+        initializeApp();
+
+        const auth = getAuth();
+
+        createUserWithEmailAndPassword(auth, "kavindusanjula.1@gmail.com", "kavindu2001").then(
+            (userCred) => {
+                ToastAndroid.showWithGravity(
+                    "Register Scuccess",
+                    ToastAndroid.CENTER,
+                );
+            }
+        ).catch(
+            (error)=>{
+                ToastAndroid.showWithGravity(
+                    "Register Faild",
+                    ToastAndroid.CENTER,
+                );
+            }
+        );
+    }
     
     const navigation=useNavigation();
     
@@ -49,7 +72,7 @@ const RegisterPage= ()=>{
                     </TouchableOpacity>
                 </View>
                 <View style= {styles.formInput}>
-                    <TouchableOpacity style={styles.defaultButton} onPress={()=>{navigation.navigate("Login")}}>
+                    <TouchableOpacity style={styles.defaultButton} onPress={handleRegister}>
                         <Text style={{color:"1C1C1C", fontWeight:'bold',textAlign:'center',fontSize:20,fontWeight:'bold'}}>REGISTER</Text>
                     </TouchableOpacity>
                 </View>
